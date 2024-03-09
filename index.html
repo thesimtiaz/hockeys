@@ -43,9 +43,9 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header>
+    <header class="container mx-auto lg:px-8 px-4">
       <!-- navbar section starts here -->
-      <nav class="navbar container mx-auto bg-base-100 py-12">
+      <nav class="navbar bg-base-100 py-12">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -80,7 +80,7 @@
           >
         </div>
         <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-base font-normal gap-11">
+          <ul class="menu menu-horizontal px-1 text-base font-normal gap-6">
             <li><a class="text-official">Home</a></li>
             <li><a>About</a></li>
             <li><a>Pages</a></li>
@@ -96,6 +96,73 @@
         </div>
       </nav>
       <!-- navbar section ends here -->
+
+      <!-- banner section starts here -->
+      <div>
+        <div class="carousel w-full">
+          <div
+            id="slide1"
+            class="carousel-item relative w-full lg:h-[70vh] h-[35vh]"
+          >
+            <img src="assets/images/champions.png" class="w-full rounded-2xl" />
+            <div
+              class="absolute flex left-1/2 lg:left-28 bottom-6 lg:bottom-0 gap-6 -translate-x-1/2 lg:-translate-y-1/2"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-official hover:bg-[#131318] text-white"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-official hover:bg-[#131318] text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide2"
+            class="carousel-item relative w-full lg:h-[70vh] h-[35vh]"
+          >
+            <img src="assets/images/team.jpg" class="w-full rounded-2xl" />
+            <div
+              class="absolute flex left-1/2 lg:left-28 bottom-6 lg:bottom-0 gap-6 -translate-x-1/2 lg:-translate-y-1/2"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-official hover:bg-[#131318] text-white"
+                >❮</a
+              >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-official hover:bg-[#131318] text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div
+            id="slide3"
+            class="carousel-item relative w-full lg:h-[70vh] h-[35vh]"
+          >
+            <img src="assets/images/stadium.jpg" class="w-full rounded-2xl" />
+            <div
+              class="absolute flex left-1/2 lg:left-28 bottom-6 lg:bottom-0 gap-6 -translate-x-1/2 lg:-translate-y-1/2"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-official hover:bg-[#131318] text-white"
+                >❮</a
+              >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-official hover:bg-[#131318] text-white"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner section ends here -->
     </header>
 
     <main></main>
