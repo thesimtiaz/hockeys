@@ -23,18 +23,83 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <!--  tailwind custom color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              official: "#FF4240",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- css custom style -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="font-manrope">
     <header>
-
+      <!-- navbar section starts here -->
+      <nav class="navbar container mx-auto bg-base-100 py-12">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-normal"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="text-4xl font-extrabold"
+            >Hockey<span class="text-official">’</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-base font-normal gap-11">
+            <li><a class="text-official">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a
+            class="bg-official text-lg font-bold text-white px-6 py-3 hover:bg-[#131318] rounded-lg cursor-pointer duration-500"
+            >Get Ticket</a
+          >
+        </div>
+      </nav>
+      <!-- navbar section ends here -->
     </header>
 
-    <main>
+    <main></main>
 
-    </main>
-
-    <footer>
-      
-    </footer>
+    <footer></footer>
   </body>
 </html>
